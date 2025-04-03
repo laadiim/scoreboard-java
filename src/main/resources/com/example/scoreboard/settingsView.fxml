@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="229.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scoreboard.SettingsView">
+    <Tab text="Jeden zapas">
+        <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="96.0" prefWidth="270.0">
+                <children>
+                    <GridPane layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0" prefWidth="270.0" AnchorPane.bottomAnchor="-9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="125.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="10.0" prefWidth="75.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" valignment="CENTER" vgrow="ALWAYS" />
+                            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" valignment="CENTER" vgrow="ALWAYS" />
+                            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" />
+                        </rowConstraints>
+                        <children>
+                            <Label alignment="CENTER" prefHeight="68.0" prefWidth="224.0" text="Velikost jedno cislo" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <Label alignment="CENTER" prefHeight="87.0" prefWidth="273.0" text="Velikost dve cisla" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <Spinner fx:id="spinner1_1" amountToStepBy="10" editable="true" max="50000" min="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <Spinner fx:id="spinner1_2" amountToStepBy="10" editable="true" max="50000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <Label alignment="CENTER" prefHeight="95.0" prefWidth="223.0" text="Velikost dvojtecka" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <Spinner fx:id="spinner1_3" amountToStepBy="10" editable="true" max="50000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            <Button mnemonicParsing="false" onAction="#saveSettings" text="Save" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                        </children>
+                    </GridPane>
+                </children>
+            </AnchorPane>
+        </content>
+    </Tab>
+    <Tab text="Dva zapasy">
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="270.0">
+            <GridPane layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="270.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="125.0" />
+                    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" valignment="CENTER" vgrow="ALWAYS" />
+                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" valignment="CENTER" vgrow="ALWAYS" />
+               <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" valignment="CENTER" vgrow="ALWAYS" />
+                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <Label alignment="CENTER" prefHeight="45.0" prefWidth="175.0" text="Velikost jedno cislo" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Label alignment="CENTER" prefHeight="50.0" prefWidth="175.0" text="Velikost dve cisla" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Spinner fx:id="spinner2_1" amountToStepBy="10" editable="true" max="50000" min="0" GridPane.columnIndex="1" />
+                <Spinner fx:id="spinner2_2" amountToStepBy="10" editable="true" max="50000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label alignment="CENTER" prefHeight="87.0" prefWidth="240.0" text="Velikost dvojtecka" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Spinner fx:id="spinner2_3" amountToStepBy="10" editable="true" max="50000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#saveSettings" text="Save" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            </GridPane>
+        </AnchorPane>
+    </Tab>
+</TabPane>

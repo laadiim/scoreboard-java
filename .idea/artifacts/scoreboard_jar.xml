@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="scoreboard:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/scoreboard_jar</output-path>
+    <root id="archive" name="scoreboard.jar">
+      <element id="module-output" name="scoreboard" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:22-ea+11" />
+    </root>
+  </artifact>
+</component>
